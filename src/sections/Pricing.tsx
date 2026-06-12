@@ -150,6 +150,182 @@
 //   );
 // };
 
+// "use client";
+
+// import CheckIcon from "@/assets/check.svg";
+// import { motion } from "framer-motion";
+// import { twMerge } from "tailwind-merge";
+
+// const whatsappLink =
+//   "https://wa.me/2349169215343?text=Hello%20Zikconnect%2C%20I%20want%20to%20automate%20my%20payment%20operations.";
+
+// const pricingTiers = [
+//   {
+//     title: "Nomba Automation",
+//     price: "₦200,000",
+//     buttonText: "Get Started",
+//     popular: false,
+//     inverse: false,
+//     features: [
+//       "Nomba API integration",
+//       "Automated bank transfers",
+//       "Recipient verification",
+//       "Webhook integration",
+//       "Transaction monitoring",
+//       "n8n workflow automation",
+//       "Secure payout handling",
+//     ],
+//   },
+
+//   {
+//     title: "Paystack Automation",
+//     price: "₦200,000",
+//     buttonText: "Start Now",
+//     popular: true,
+//     inverse: true,
+//     features: [
+//       "Paystack transfer automation",
+//       "Automated payouts",
+//       "Recipient management",
+//       "Webhook automation",
+//       "Business payment workflows",
+//       "n8n integration setup",
+//       "Priority support",
+//     ],
+//   },
+
+//   {
+//     title: "Bybit Automation",
+//     price: "₦500,000",
+//     oldPrice: "₦400,000",
+//     buttonText: "Automate Now",
+//     popular: false,
+//     inverse: false,
+//     features: [
+//       "Bybit API automation",
+//       "Order processing workflows",
+//       "Automated transaction tracking",
+//       "Escrow workflow automation",
+//       "n8n infrastructure setup",
+//       "Webhook integrations",
+//       "Advanced automation logic",
+//       "Technical deployment support",
+//     ],
+//   },
+// ];
+
+// export const Pricing = () => {
+//   return (
+//     <section className="py-24 bg-white">
+//       <div className="container">
+//         {/* Heading */}
+//         <div className="section-heading">
+//           <h2 className="section-title">Automation Pricing</h2>
+
+//           <p className="section-description mt-5">
+//             Professional payment and workflow automation solutions tailored for
+//             businesses, payouts, transfers, and advanced integrations.
+//           </p>
+//         </div>
+
+//         {/* Pricing Cards */}
+//         <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
+//           {pricingTiers.map(
+//             ({
+//               title,
+//               price,
+//               oldPrice,
+//               buttonText,
+//               popular,
+//               inverse,
+//               features,
+//             }) => (
+//               <div
+//                 key={title}
+//                 className={twMerge(
+//                   "card max-w-xs w-full",
+//                   inverse === true && "border-black bg-black text-white",
+//                 )}
+//               >
+//                 {/* Header */}
+//                 <div className="flex justify-between items-center">
+//                   <h3
+//                     className={twMerge(
+//                       "text-lg font-bold text-black/50",
+//                       inverse === true && "text-white/60",
+//                     )}
+//                   >
+//                     {title}
+//                   </h3>
+
+//                   {popular === true && (
+//                     <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
+//                       <motion.span
+//                         animate={{
+//                           backgroundPositionX: "100%",
+//                         }}
+//                         transition={{
+//                           duration: 1,
+//                           repeat: Infinity,
+//                           ease: "linear",
+//                           repeatType: "loop",
+//                         }}
+//                         className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%] text-transparent bg-clip-text font-medium"
+//                       >
+//                         Popular
+//                       </motion.span>
+//                     </div>
+//                   )}
+//                 </div>
+
+//                 {/* Pricing */}
+//                 <div className="mt-[30px]">
+//                   {oldPrice && (
+//                     <p className="text-lg line-through text-black/40 mb-2">
+//                       {oldPrice}
+//                     </p>
+//                   )}
+
+//                   <span className="text-4xl font-bold tracking-tighter leading-none">
+//                     {price}
+//                   </span>
+//                 </div>
+
+//                 {/* Button */}
+//                 <a
+//                   href={whatsappLink}
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                   className={twMerge(
+//                     "btn btn-primary w-full mt-[30px] text-center inline-flex items-center justify-center",
+//                     inverse === true && "bg-white text-black",
+//                   )}
+//                 >
+//                   {buttonText}
+//                 </a>
+
+//                 {/* Features */}
+//                 <ul className="flex flex-col gap-5 mt-8">
+//                   {features.map((feature) => (
+//                     <li
+//                       key={feature}
+//                       className="text-sm flex items-center gap-4"
+//                     >
+//                       <CheckIcon className="h-6 w-6" />
+
+//                       <span>{feature}</span>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             ),
+//           )}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
 "use client";
 
 import CheckIcon from "@/assets/check.svg";
@@ -157,59 +333,59 @@ import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
 const whatsappLink =
-  "https://wa.me/2349169215343?text=Hello%20Zikconnect%2C%20I%20want%20to%20automate%20my%20payment%20operations.";
+  "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20business%20service%20and%20payment%20solutions.";
 
 const pricingTiers = [
   {
-    title: "Nomba Automation",
+    title: "Starter",
     price: "₦200,000",
     buttonText: "Get Started",
     popular: false,
     inverse: false,
     features: [
-      "Nomba API integration",
-      "Automated bank transfers",
-      "Recipient verification",
-      "Webhook integration",
-      "Transaction monitoring",
-      "n8n workflow automation",
-      "Secure payout handling",
+      "Service request management",
+      "Payment collection setup",
+      "Transaction verification",
+      "Basic reporting tools",
+      "Customer onboarding support",
+      "Business workflow automation",
+      "Operational dashboard access",
     ],
   },
 
   {
-    title: "Paystack Automation",
-    price: "₦200,000",
+    title: "Business",
+    price: "₦350,000",
     buttonText: "Start Now",
     popular: true,
     inverse: true,
     features: [
-      "Paystack transfer automation",
-      "Automated payouts",
-      "Recipient management",
-      "Webhook automation",
-      "Business payment workflows",
-      "n8n integration setup",
+      "Advanced payment workflows",
+      "Automated reconciliation",
+      "Settlement management",
+      "Service provider management",
+      "Business reporting dashboard",
+      "Workflow automation setup",
       "Priority support",
     ],
   },
 
   {
-    title: "Bybit Automation",
+    title: "Enterprise",
     price: "₦500,000",
     oldPrice: "₦400,000",
-    buttonText: "Automate Now",
+    buttonText: "Contact Sales",
     popular: false,
     inverse: false,
     features: [
-      "Bybit API automation",
-      "Order processing workflows",
-      "Automated transaction tracking",
-      "Escrow workflow automation",
-      "n8n infrastructure setup",
-      "Webhook integrations",
-      "Advanced automation logic",
-      "Technical deployment support",
+      "Custom business workflows",
+      "Payment collection automation",
+      "Settlement coordination",
+      "Advanced reporting and analytics",
+      "API integrations",
+      "Dedicated implementation support",
+      "Operational process optimization",
+      "Enterprise onboarding assistance",
     ],
   },
 ];
@@ -220,11 +396,12 @@ export const Pricing = () => {
       <div className="container">
         {/* Heading */}
         <div className="section-heading">
-          <h2 className="section-title">Automation Pricing</h2>
+          <h2 className="section-title">Solutions for Growing Businesses</h2>
 
           <p className="section-description mt-5">
-            Professional payment and workflow automation solutions tailored for
-            businesses, payouts, transfers, and advanced integrations.
+            Flexible solutions for managing service requests, payment
+            collection, transaction verification, reconciliation, reporting, and
+            settlement operations through a single platform.
           </p>
         </div>
 
@@ -312,7 +489,6 @@ export const Pricing = () => {
                       className="text-sm flex items-center gap-4"
                     >
                       <CheckIcon className="h-6 w-6" />
-
                       <span>{feature}</span>
                     </li>
                   ))}

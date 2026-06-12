@@ -91,6 +91,121 @@
 //     </section>
 //   );
 // };
+
+// "use client";
+
+// import ArrowIcon from "@/assets/arrow-right.svg";
+// import cogImage from "@/assets/cog.png";
+// import cylinderImage from "@/assets/cylinder.png";
+// import noodleImage from "@/assets/noodle.png";
+
+// import { motion, useScroll, useTransform } from "framer-motion";
+
+// import { useRef } from "react";
+
+// export const Hero = () => {
+//   const heroRef = useRef(null);
+
+//   const { scrollYProgress } = useScroll({
+//     target: heroRef,
+//     offset: ["start end", "end start"],
+//   });
+
+//   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
+//   const whatsappLink =
+//     "https://wa.me/2349169215343?text=Hello%20Zikconnect%2C%20I%20want%20to%20learn%20more%20about%20your%20payment%20automation%20services.";
+
+//   return (
+//     <section
+//       ref={heroRef}
+//       className="pt-8 pb-20 md:pt-5 md:pb-10 overflow-x-clip bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#eaeefe_100%)]"
+//     >
+//       <div className="container">
+//         <div className="md:flex items-center">
+//           {/* Left Content */}
+//           <div className="md:w-[540px]">
+//             <div className="tag">Trusted payment automation infrastructure</div>
+
+//             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">
+//               Automate Your Business Payments
+//             </h1>
+
+//             <p className="text-xl text-[#010d3e] tracking-tight mt-6">
+//               Streamline bank transfers, payout operations, recipient
+//               verification, and transaction tracking with secure and scalable
+//               payment automation built for modern businesses.
+//             </p>
+
+//             {/* Buttons */}
+//             <div className="flex gap-3 items-center mt-[30px]">
+//               <a
+//                 href={whatsappLink}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="btn btn-primary"
+//               >
+//                 Get Started
+//               </a>
+
+//               <a
+//                 href={whatsappLink}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="btn btn-text gap-1 inline-flex items-center"
+//               >
+//                 <span>Learn More</span>
+
+//                 <ArrowIcon className="h-5 w-5" />
+//               </a>
+//             </div>
+//           </div>
+
+//           {/* Right Images */}
+//           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
+//             <motion.img
+//               src={cogImage.src}
+//               alt="Payment automation dashboard"
+//               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
+//               animate={{
+//                 translateY: [-30, 30],
+//               }}
+//               transition={{
+//                 repeat: Infinity,
+//                 repeatType: "mirror",
+//                 duration: 3,
+//                 ease: "easeInOut",
+//               }}
+//             />
+
+//             <motion.img
+//               src={cylinderImage.src}
+//               alt="Secure transfer system"
+//               width={220}
+//               height={220}
+//               className="hidden md:block -top-8 -left-32 md:absolute"
+//               style={{
+//                 translateY,
+//               }}
+//             />
+
+//             <motion.img
+//               src={noodleImage.src}
+//               width={220}
+//               alt="Business payment infrastructure"
+//               className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
+//               style={{
+//                 rotate: 30,
+//                 translateY,
+//               }}
+//             />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
 "use client";
 
 import ArrowIcon from "@/assets/arrow-right.svg";
@@ -99,7 +214,6 @@ import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-
 import { useRef } from "react";
 
 export const Hero = () => {
@@ -113,7 +227,7 @@ export const Hero = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   const whatsappLink =
-    "https://wa.me/2349169215343?text=Hello%20Zikconnect%2C%20I%20want%20to%20learn%20more%20about%20your%20payment%20automation%20services.";
+    "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I%20want%20to%20learn%20more%20about%20your%20service%20platform%20and%20payment%20solutions.";
 
   return (
     <section
@@ -124,16 +238,20 @@ export const Hero = () => {
         <div className="md:flex items-center">
           {/* Left Content */}
           <div className="md:w-[540px]">
-            <div className="tag">Trusted payment automation infrastructure</div>
+            <div className="tag">
+              Service marketplace and payment coordination platform
+            </div>
 
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">
-              Automate Your Business Payments
+              Connect Customers With Trusted Service Providers
             </h1>
 
             <p className="text-xl text-[#010d3e] tracking-tight mt-6">
-              Streamline bank transfers, payout operations, recipient
-              verification, and transaction tracking with secure and scalable
-              payment automation built for modern businesses.
+              ZikConnect is an online platform that connects customers with
+              service providers while simplifying service requests, payment
+              collection, transaction verification, account reconciliation,
+              reporting, and settlements. Manage business operations and
+              transactions efficiently through a single integrated platform.
             </p>
 
             {/* Buttons */}
@@ -164,7 +282,7 @@ export const Hero = () => {
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
             <motion.img
               src={cogImage.src}
-              alt="Payment automation dashboard"
+              alt="Service management dashboard"
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
               animate={{
                 translateY: [-30, 30],
@@ -179,7 +297,7 @@ export const Hero = () => {
 
             <motion.img
               src={cylinderImage.src}
-              alt="Secure transfer system"
+              alt="Transaction verification system"
               width={220}
               height={220}
               className="hidden md:block -top-8 -left-32 md:absolute"
@@ -191,7 +309,7 @@ export const Hero = () => {
             <motion.img
               src={noodleImage.src}
               width={220}
-              alt="Business payment infrastructure"
+              alt="Settlement and reporting platform"
               className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
               style={{
                 rotate: 30,
