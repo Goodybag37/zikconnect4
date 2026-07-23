@@ -166,8 +166,8 @@ export const Header = () => {
       {/* Top Banner */}
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3 px-4 text-center">
         <p className="text-white/60 hidden md:block">
-          Payment collection, verification, reconciliation, and settlement tools
-          for modern businesses
+          Learn AI content creation, face swapping, and P2P automation from
+          industry professionals.
         </p>
 
         <a

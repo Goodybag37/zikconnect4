@@ -147,6 +147,98 @@
 //   );
 // };
 
+// "use client";
+
+// import ArrowRight from "@/assets/arrow-right.svg";
+// import springImage from "@/assets/spring.png";
+// import starImage from "@/assets/star.png";
+
+// import { motion, useScroll, useTransform } from "framer-motion";
+// import { useRef } from "react";
+
+// export const CallToAction = () => {
+//   const sectionRef = useRef(null);
+
+//   const { scrollYProgress } = useScroll({
+//     target: sectionRef,
+//     offset: ["start end", "end start"],
+//   });
+
+//   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
+//   const whatsappLink =
+//     "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I%20want%20to%20learn%20more%20about%20your%20service%20platform%20and%20payment%20solutions.";
+
+//   return (
+//     <section
+//       ref={sectionRef}
+//       className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip"
+//     >
+//       <div className="container">
+//         {/* Heading */}
+//         <div className="section-heading relative">
+//           <h2 className="section-title">
+//             Manage Services, Payments, and Settlements in One Place
+//           </h2>
+
+//           <p className="section-description mt-5">
+//             ZikConnect helps businesses connect customers with service providers
+//             while simplifying payment collection, transaction verification,
+//             account reconciliation, reporting, and settlement workflows. Operate
+//             more efficiently with a centralized platform designed for modern
+//             service-based businesses.
+//           </p>
+
+//           {/* Floating Star */}
+//           <motion.img
+//             src={starImage.src}
+//             alt="Service provider platform"
+//             width={360}
+//             className="absolute -left-[350px] -top-[137px]"
+//             style={{
+//               translateY,
+//             }}
+//           />
+
+//           {/* Floating Spring */}
+//           <motion.img
+//             src={springImage.src}
+//             alt="Payment and settlement management"
+//             width={360}
+//             className="absolute -right-[331px] -top-[19px]"
+//             style={{
+//               translateY,
+//             }}
+//           />
+//         </div>
+
+//         {/* Buttons */}
+//         <div className="flex gap-3 mt-10 justify-center flex-wrap">
+//           <a
+//             href={whatsappLink}
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="btn btn-primary"
+//           >
+//             Contact Us
+//           </a>
+
+//           <a
+//             href={whatsappLink}
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="btn btn-text gap-1 inline-flex items-center"
+//           >
+//             <span>Learn More</span>
+
+//             <ArrowRight className="h-5 w-5" />
+//           </a>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
 "use client";
 
 import ArrowRight from "@/assets/arrow-right.svg";
@@ -166,8 +258,11 @@ export const CallToAction = () => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
+  // Replace with your actual Selar checkout link
+  const selarLink = "https://selar.co/your-ai-course";
+
   const whatsappLink =
-    "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I%20want%20to%20learn%20more%20about%20your%20service%20platform%20and%20payment%20solutions.";
+    "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I'm%20interested%20in%20your%20AI%20courses%20and%20automation%20services.";
 
   return (
     <section
@@ -178,21 +273,21 @@ export const CallToAction = () => {
         {/* Heading */}
         <div className="section-heading relative">
           <h2 className="section-title">
-            Manage Services, Payments, and Settlements in One Place
+            Start Building In-Demand AI Skills Today
           </h2>
 
           <p className="section-description mt-5">
-            ZikConnect helps businesses connect customers with service providers
-            while simplifying payment collection, transaction verification,
-            account reconciliation, reporting, and settlement workflows. Operate
-            more efficiently with a centralized platform designed for modern
-            service-based businesses.
+            Join hundreds of learners discovering how to create viral AI videos,
+            master hyper-realistic face swapping, and automate cryptocurrency
+            P2P businesses with practical, step-by-step training. Gain
+            real-world skills, lifetime community support, and continuous
+            updates as AI technology evolves.
           </p>
 
           {/* Floating Star */}
           <motion.img
             src={starImage.src}
-            alt="Service provider platform"
+            alt="AI Content Creation"
             width={360}
             className="absolute -left-[350px] -top-[137px]"
             style={{
@@ -203,7 +298,7 @@ export const CallToAction = () => {
           {/* Floating Spring */}
           <motion.img
             src={springImage.src}
-            alt="Payment and settlement management"
+            alt="AI Business Automation"
             width={360}
             className="absolute -right-[331px] -top-[19px]"
             style={{
@@ -215,12 +310,12 @@ export const CallToAction = () => {
         {/* Buttons */}
         <div className="flex gap-3 mt-10 justify-center flex-wrap">
           <a
-            href={whatsappLink}
+            href={selarLink}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
           >
-            Contact Us
+            Enroll Now
           </a>
 
           <a
@@ -229,7 +324,7 @@ export const CallToAction = () => {
             rel="noopener noreferrer"
             className="btn btn-text gap-1 inline-flex items-center"
           >
-            <span>Learn More</span>
+            <span>Chat on WhatsApp</span>
 
             <ArrowRight className="h-5 w-5" />
           </a>
