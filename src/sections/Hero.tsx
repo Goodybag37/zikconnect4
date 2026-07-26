@@ -367,10 +367,9 @@ export const Hero = () => {
             </h1>
 
             <p className="text-xl text-[#010d3e] tracking-tight mt-6">
-              Master the most in-demand AI skills with practical,
-              beginner-friendly training. Learn how to create viral AI contents,
-              build hyper-realistic face swaps. Get lifetime community support
-              and start building valuable digital skills today.
+              Learn how to create viral AI contents and AI movies on this
+              course. build hyper-realistic face swaps. Connect to all your
+              social media and how to monetize your page
             </p>
 
             {/* Buttons */}

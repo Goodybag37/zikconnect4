@@ -309,10 +309,10 @@ export const ProductShowcase = () => {
 
           <p className="section-description mt-5">
             Whether you are looking to create viral AI content, build
-            hyper-realistic face swaps, or automate cryptocurrency P2P
-            operations, our hands-on training gives you practical skills you can
-            apply immediately. Learn from beginner to advanced with lifetime
-            community support and continuously updated lessons.
+            hyper-realistic face swaps, or other high demand AI skills. This
+            platform is built for you. ensure to select the course below that
+            best suits your needs. we would also teach you how to monetize it
+            and apply for jobs with your knowledge
           </p>
 
           {/* CTA */}
