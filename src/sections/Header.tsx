@@ -159,7 +159,7 @@ import Image from "next/image";
 
 export const Header = () => {
   const whatsappLink =
-    "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I%20want%20to%20learn%20more%20about%20your%20business%20payment%20solutions.";
+    "https://wa.me/2349052148610?text=Hello%20ZikConnect%2C%20I%20want%20to%20learn%20more%20about%20your%20business%20payment%20solutions.";
 
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">

@@ -262,7 +262,7 @@ export const CallToAction = () => {
   const selarLink = "https://selar.co/your-ai-course";
 
   const whatsappLink =
-    "https://wa.me/2349169215343?text=Hello%20ZikConnect%2C%20I'm%20interested%20in%20your%20AI%20courses%20and%20automation%20services.";
+    "https://wa.me/2349052148610?text=Hello%20ZikConnect%2C%20I'm%20interested%20in%20your%20AI%20courses%20and%20automation%20services.";
 
   return (
     <section

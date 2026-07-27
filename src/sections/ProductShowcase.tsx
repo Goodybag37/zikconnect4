@@ -267,11 +267,8 @@
 
 "use client";
 
-import productImage from "@/assets/product-image.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
-
-import Image from "next/image";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -331,11 +328,36 @@ export const ProductShowcase = () => {
         {/* Product Image */}
         <div className="relative">
           <a href={selarLink} target="_blank" rel="noopener noreferrer">
-            <Image
+            <p className="section-description mt-5">
+              <ul>
+                <li>
+                  No Prior Knowledge Required! We would teach you all you need
+                  to know from beginer to pro.
+                </li>
+                <li>
+                  No code required! you wont be writing any code from start to
+                  finish.{" "}
+                </li>
+                <li>
+                  Professional Training! you would be thought by professionals
+                  in the field who would hasten up your learning process.
+                </li>
+                <li>
+                  {" "}
+                  Monetize it! you would be thought on how to monetize your
+                  skill accross all social media platforms.
+                </li>
+                <li>
+                  Apply for jobs! You would be connected on foreign clients who
+                  are willing to pay for your skill in dollars
+                </li>
+              </ul>
+            </p>
+            {/* <Image
               src={productImage}
               alt="AI Content Creation and Automation Training"
               className="mt-10 cursor-pointer"
-            />
+            /> */}
           </a>
 
           {/* Floating Pyramid */}

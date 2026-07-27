@@ -332,7 +332,7 @@ import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
 const whatsappLink =
-  "https://wa.me/2349169215343?text=Hello%20Zikconnect%2C%20I%20want%20to%20automate%20my%20payment%20operations.";
+  "https://wa.me/2349052148610?text=Hello%20Zikconnect%2C%20I%20want%20to%20automate%20my%20payment%20operations.";
 
 const pricingTiers = [
   {
