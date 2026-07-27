@@ -203,41 +203,41 @@ export const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <a
+              {/* <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition"
               >
                 About Us
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition"
               >
                 Services
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition"
               >
                 Payment Solutions
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-black transition"
               >
                 Business API
-              </a>
+              </a> */}
 
               <a
                 href={whatsappLink}
@@ -249,14 +249,14 @@ export const Header = () => {
               </a>
 
               {/* CTA Button */}
-              <a
+              {/* <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight hover:opacity-90 transition"
               >
                 Contact Sales
-              </a>
+              </a> */}
             </nav>
           </div>
         </div>
