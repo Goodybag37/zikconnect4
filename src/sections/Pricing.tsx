@@ -337,7 +337,7 @@ const whatsappLink =
 const pricingTiers = [
   {
     title: "AI Content Creation",
-    price: "₦7800",
+    price: "₦4800",
     buttonText: "Enroll Now",
     buttonLink: "https://selar.com/788142vg2m", // Replace with your Selar checkout link
     popular: false,
@@ -355,7 +355,7 @@ const pricingTiers = [
 
   {
     title: "Face Swapping",
-    price: "₦10000",
+    price: "₦7800",
     buttonText: "Enroll Now",
     buttonLink: "https://selar.com/788142vg2m",
     popular: true,
@@ -374,7 +374,6 @@ const pricingTiers = [
   {
     title: "P2P Automation",
     price: "₦200,000",
-    oldPrice: "₦400,000",
     buttonText: "Enroll Now",
     buttonLink: "https://selar.com/788142vg2m",
     popular: false,
@@ -411,7 +410,7 @@ export const Pricing = () => {
             ({
               title,
               price,
-              oldPrice,
+              // oldPrice,
               buttonText,
               buttonLink,
               popular,
@@ -458,11 +457,11 @@ export const Pricing = () => {
 
                 {/* Pricing */}
                 <div className="mt-[30px]">
-                  {oldPrice && (
+                  {/* {oldPrice && (
                     <p className="text-lg line-through text-black/40 mb-2">
                       {oldPrice}
                     </p>
-                  )}
+                  )} */}
 
                   <span className="text-4xl font-bold tracking-tighter leading-none">
                     {price}
