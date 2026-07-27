@@ -337,7 +337,7 @@ const whatsappLink =
 const pricingTiers = [
   {
     title: "AI Content Creation",
-    price: "₦3000",
+    price: "₦7800",
     buttonText: "Enroll Now",
     buttonLink: "https://selar.com/788142vg2m", // Replace with your Selar checkout link
     popular: false,
@@ -355,9 +355,9 @@ const pricingTiers = [
 
   {
     title: "Face Swapping",
-    price: "₦8000",
+    price: "₦10000",
     buttonText: "Enroll Now",
-    buttonLink: whatsappLink,
+    buttonLink: "https://selar.com/788142vg2m",
     popular: true,
     inverse: true,
     features: [
@@ -376,7 +376,7 @@ const pricingTiers = [
     price: "₦200,000",
     oldPrice: "₦400,000",
     buttonText: "Enroll Now",
-    buttonLink: whatsappLink,
+    buttonLink: "https://selar.com/788142vg2m",
     popular: false,
     inverse: false,
     features: [
