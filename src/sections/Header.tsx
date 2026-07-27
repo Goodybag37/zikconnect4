@@ -161,6 +161,7 @@ export const Header = () => {
   const whatsappLink =
     "https://wa.me/2349052148610?text=Hello%20ZikConnect%2C%20I%20want%20to%20learn%20more%20about%20your%20business%20payment%20solutions.";
 
+  const selarLink = "https://selar.com/788142vg2m";
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       {/* Top Banner */}
@@ -171,12 +172,12 @@ export const Header = () => {
         </p>
 
         <a
-          href={whatsappLink}
+          href={selarLink}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex gap-1 items-center hover:opacity-80 transition"
         >
-          <p>Explore ZikConnect Solutions</p>
+          <p>Explore ZikConnect Automations</p>
 
           <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
         </a>
@@ -249,14 +250,14 @@ export const Header = () => {
               </a>
 
               {/* CTA Button */}
-              {/* <a
-                href={whatsappLink}
+              <a
+                href={selarLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight hover:opacity-90 transition"
               >
-                Contact Sales
-              </a> */}
+                Enroll Now
+              </a>
             </nav>
           </div>
         </div>
